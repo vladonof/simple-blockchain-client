@@ -46,28 +46,20 @@ This is a simple blockchain client API. The API provides endpoints to interact w
 1. **Build the Docker Image:**
 
    ```sh
-   docker build -t my-go-app .
+   docker build -t simple-blockchain-app .
    ```
 
 2. **Run the Docker Container:**
 
    ```sh
-   docker run -p 8080:8080 my-go-app
+   docker run -p 8080:8080 simple-blockchain-app
    ```
 
 ## How to Run Tests
 
-1. **Navigate to the Project Directory:**
-
-   ```sh
-   cd trustwallet-simple-blockchain-client
-   ```
-
-2. **Run Tests:**
-
-   ```sh
-   go test ./...
-   ```
+```sh
+go test ./internal/...
+```
 
 ## What Should Be Added for the API to be "Prod Ready"
 

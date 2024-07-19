@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
-	"trustwallet-simple-blockchain-client/pkg/models"
+	"simple-blockchain-client/pkg/models"
 )
 
 type RPCClient struct {

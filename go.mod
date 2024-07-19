@@ -1,4 +1,4 @@
-module trustwallet-simple-blockchain-client
+module simple-blockchain-client
 
 go 1.21.2
 

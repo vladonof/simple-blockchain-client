@@ -3,11 +3,11 @@ package server
 import (
 	"net/http"
 	"net/http/httptest"
+	"simple-blockchain-client/internal/handlers"
+	"simple-blockchain-client/internal/rpc"
+	"simple-blockchain-client/pkg/models"
 	"strings"
 	"testing"
-	"trustwallet-simple-blockchain-client/internal/handlers"
-	"trustwallet-simple-blockchain-client/internal/rpc"
-	"trustwallet-simple-blockchain-client/pkg/models"
 
 	"github.com/gorilla/mux"
 	"github.com/stretchr/testify/assert"

@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"net/http"
 	"net/http/httptest"
+	"simple-blockchain-client/internal/rpc"
+	"simple-blockchain-client/pkg/models"
 	"strings"
 	"testing"
-	"trustwallet-simple-blockchain-client/internal/rpc"
-	"trustwallet-simple-blockchain-client/pkg/models"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
@@ -17,7 +17,7 @@ func TestGetBlockNumber(t *testing.T) {
 	mockClient := new(rpc.MockRPCClient)
 	mockClient.On("SendRPCRequest", mock.Anything).Return(models.RPCResponse{
 		Result: "0x1",
-		ID:     1,
+		ID:     2,
 	}, nil)
 
 	h := NewHandlers(mockClient)
@@ -30,7 +30,7 @@ func TestGetBlockNumber(t *testing.T) {
 	expectedRPCRequest := models.RPCRequest{
 		JSONRPC: "2.0",
 		Method:  "eth_blockNumber",
-		ID:      1,
+		ID:      2,
 	}
 	mockClient.AssertCalled(t, "SendRPCRequest", expectedRPCRequest)
 

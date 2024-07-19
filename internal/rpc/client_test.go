@@ -3,8 +3,8 @@ package rpc
 import (
 	"net/http"
 	"net/http/httptest"
+	"simple-blockchain-client/pkg/models"
 	"testing"
-	"trustwallet-simple-blockchain-client/pkg/models"
 
 	"github.com/stretchr/testify/assert"
 )

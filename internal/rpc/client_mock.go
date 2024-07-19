@@ -1,7 +1,7 @@
 package rpc
 
 import (
-	"trustwallet-simple-blockchain-client/pkg/models"
+	"simple-blockchain-client/pkg/models"
 
 	"github.com/stretchr/testify/mock"
 )

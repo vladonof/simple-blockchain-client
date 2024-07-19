@@ -3,8 +3,8 @@ package handlers
 import (
 	"encoding/json"
 	"net/http"
-	"trustwallet-simple-blockchain-client/internal/rpc"
-	"trustwallet-simple-blockchain-client/pkg/models"
+	"simple-blockchain-client/internal/rpc"
+	"simple-blockchain-client/pkg/models"
 )
 
 type Handlers struct {
@@ -19,7 +19,7 @@ func (h *Handlers) GetBlockNumber(w http.ResponseWriter, r *http.Request) {
 	rpcRequest := models.RPCRequest{
 		JSONRPC: "2.0",
 		Method:  "eth_blockNumber",
-		ID:      3,
+		ID:      2,
 	}
 
 	handleRPCRequest(h.Client, w, rpcRequest)

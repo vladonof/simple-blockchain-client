@@ -2,8 +2,8 @@ package server
 
 import (
 	"net/http"
-	"trustwallet-simple-blockchain-client/internal/handlers"
-	"trustwallet-simple-blockchain-client/internal/rpc"
+	"simple-blockchain-client/internal/handlers"
+	"simple-blockchain-client/internal/rpc"
 
 	"github.com/gorilla/mux"
 )

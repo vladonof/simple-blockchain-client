@@ -3,8 +3,8 @@ package handlers
 import (
 	"encoding/json"
 	"net/http"
-	"trustwallet-simple-blockchain-client/internal/rpc"
-	"trustwallet-simple-blockchain-client/pkg/models"
+	"simple-blockchain-client/internal/rpc"
+	"simple-blockchain-client/pkg/models"
 )
 
 func respondWithJSON(w http.ResponseWriter, statusCode int, payload interface{}) {

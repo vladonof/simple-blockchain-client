@@ -13,7 +13,6 @@ vendor/
 go.work
 
 bin/
-pkg/
 *.log
 
 *.log
@@ -21,13 +20,12 @@ pkg/
 .vscode/
 .idea/
 
-.terraform/
-*.tfstate
-*.tfstate.*
-crash.log
-crash.*.log
-*.tfplan
-.terraform.lock.hcl
+*terraform/*
 
 .DS_Store
 Thumbs.db
+
+# Dockerfile itself
+Dockerfile
+.dockerignore
+
