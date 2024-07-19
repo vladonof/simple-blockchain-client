@@ -1,0 +1,40 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependencies
+vendor/
+
+# Go workspace file
+go.work
+
+# Go build artifacts
+bin/
+pkg/
+*.log
+
+# Log files
+*.log
+
+# IDE specific files (adjust based on the IDE you're using)
+.vscode/
+.idea/
+
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfplan
+.terraform.lock.hcl
+
+# Other common ignores
+.DS_Store
+Thumbs.db

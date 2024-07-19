@@ -1,0 +1,21 @@
+[
+  {
+    "name": "${SERVICE_NAME}",
+    "image": "${ECR_ADDRESS}:${ECR_IMAGE_TAG}",
+    "essential": true,
+    "portMappings": [
+      {
+        "hostPort": 80,
+        "protocol": "tcp",
+        "containerPort": 8080
+      }
+    ],
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "${SERVICE_NAME}-group",
+        "awslogs-region": "${AWS_REGION}"
+      }
+    }
+  }
+]
