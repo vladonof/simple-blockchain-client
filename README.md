@@ -10,7 +10,7 @@ This is a simple blockchain client API. The API provides endpoints to interact w
 
 - **URL:** `/blockNumber`
 - **Method:** `POST`
-- **Description:** Retrieves the current block number.
+- **Description:** Retrieves the block number.
 
 ### 2. Get Block By Number
 
@@ -21,7 +21,7 @@ This is a simple blockchain client API. The API provides endpoints to interact w
 
   ```json
   {
-    "blockNumber": "0x1"
+    "blockNumber": "0x134e82a"
   }
   ```
 
@@ -68,17 +68,19 @@ go test ./internal/...
 - Improve error handling to provide more descriptive error messages and proper HTTP status codes
 - Implement authentication and authorization to secure the API endpoints
 - Ensure all inputs are properly validated.
-- Add rate limiting to prevent abuse of the API.
+- Add rate limiting to prevent abuse of the API
 - CI/CD Pipeline
   - Run Tests
   - Static Code Analysis
   - Dependency scan
+  - Build and push docker image to ECR
 - Set up monitoring(both log ingesting and infrastructure data) and alerting to track the performance and availability.
-- Make the TF module more dynamic and configurable, stuff like:
-  - Proper VPC
+- Review the HCL, make it more dynamic and configurable, stuff like:
+  - Proper VPC/subnetting
   - Security Groups
   - SSL
+  - IAM
   - Autoscaling
-- Implement a caching layer to improve performance (if applicable)
+- Implement caching layers to improve performance (if applicable)
 - Provide comprehensive API documentation
 - Comprehensive load test
