@@ -74,8 +74,11 @@ go test ./internal/...
   - Static Code Analysis
   - Dependency scan
 - Set up monitoring(both log ingesting and infrastructure data) and alerting to track the performance and availability.
-- Set up autoscaling on the ECS service
-- Make the TF module more dynamic and configurable
+- Make the TF module more dynamic and configurable, stuff like:
+  - Proper VPC
+  - Security Groups
+  - SSL
+  - Autoscaling
 - Implement a caching layer to improve performance (if applicable)
 - Provide comprehensive API documentation
 - Comprehensive load test
